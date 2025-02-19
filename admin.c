@@ -59,7 +59,7 @@ int main() {
     scanf("%s", account.password);
 
     // Store account details
-    fp = fopen("info.dat", "ab");
+    fp = fopen("individual.txt", "wb");
     fwrite(&account, sizeof(BankAccount), 1, fp);
     fclose(fp);
 
