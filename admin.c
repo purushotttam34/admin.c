@@ -60,10 +60,6 @@ int main() {
 
     // Store account details
     fp = fopen("info.dat", "ab");
-    if (fp == NULL) {
-        printf("Error opening file!\n");
-        return 1;
-    }
     fwrite(&account, sizeof(BankAccount), 1, fp);
     fclose(fp);
 
